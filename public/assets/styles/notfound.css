@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face { font-family: 'Asgard'; src: url('../fonts/BOLD.ttf') format('truetype'); }
+@font-face { font-family: 'fix'; src: url('../fonts/Poppins-Medium.ttf') format('truetype'); }
+
+::selection {
+    background-color: var(--sohub-black);
+    color: var(--sohub-white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asgard', sans-serif;
+}
+
+:root {
+  --sohub-white: #f0f6f8;
+  --sohub-black: #0c1016;
+  --sohub-grey: #a5abad;
+  --sohub-soft-grey: #d9e0e3;
+  --transition-speed: 0.4s ease-in-out;
+  --close-btn: #141b2b;
+  --close-btn-text: #e8edf5;
+
+  --sohub-cursor-bg: #ffffff;
+  --sohub-circle-bg: #ffffff;
+  --sohub-overlay-text: #ffffff;
+  --sohub-heart-color: #ff4d4d;
+  --sohub-overlay-bg: rgba(0, 0, 0, 0.4);
+  --sohub-footer-bg-text: #242c3a;
+  --sohub-border-color: #333333;
+  --sohub-black-rgb: 12, 16, 22;
+  --sohub-white-rgb: 240, 246, 248;
+  --sohub-shadow: rgba(0, 0, 0, 0.08);
+  --sohub-btn-bg: #1e232c;
+}
+
+[data-theme='dark'] {
+  --sohub-white: #0a0e17;
+  --sohub-soft-grey: #141b2b;
+  --close-btn: #e8edf5;
+  --close-btn-text: #141b2b;
+  --sohub-black: #e8edf5;
+  --sohub-grey: #8896a8;
+  --sohub-cursor-bg: #ffffff;
+  --sohub-circle-bg: #ffffff;
+  --sohub-overlay-text: #ffffff;
+  --sohub-heart-color: #ff6b6b;
+  --sohub-overlay-bg: rgba(10, 14, 23, 0.85);
+  --sohub-footer-bg-text: #2a3448;
+  --sohub-border-color: #2a3448;
+  --sohub-black-rgb: 232, 237, 245;
+  --sohub-white-rgb: 10, 14, 23;
+  --sohub-shadow: rgba(255, 255, 255, 0.05);
+  --sohub-btn-bg: #2a3038;
+}
+
+.not-found-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--sohub-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.not-found-container i {
+  font-size: 5rem;
+  color: var(--sohub-black);
+}
+
+.back-home-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 28px;
+  background-color: var(--sohub-black);
+  color: var(--sohub-white);
+  border: none;
+  border-radius: 40px;
+  font-family: 'fix', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #1e232c;
+}
