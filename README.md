@@ -6,7 +6,8 @@
       -->
    <!-- TODO: Get a job -->
    <img src="https://github.com/luxjson/luxjson.github.io/blob/main/src/assets/images/icon2.png" width="100px" height="100px" style="border-radius: 30%" align="left">
-   
+   <img src="https://skillicons.dev/icons?i=nextjs&perline=1" />
+
    ### `LUXJSON (NextJS Version)`
    
 
