@@ -31,9 +31,10 @@
    
    If you'd like to report a bug, please do so on our [GitHub Issues page](https://github.com/luxjson/luxjson.github.io/issues/new/choose)
 
+   ### Directory Structure
+
 ```
 Portfolio
-next-ported
 ├───app
 │   ├───admin
 │   │   ├───posts
