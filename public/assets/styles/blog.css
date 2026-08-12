@@ -242,3 +242,119 @@
                 font-size: 15px;
             }
         }
+
+/* =========================================================
+   RESPONSIVE OVERFLOW FIXES
+   ========================================================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.sh-blog-post-main,
+.sh-blog-post-article,
+.sh-blog-post-cover,
+.sh-blog-post-content,
+.sh-blog-post-footer {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.sh-blog-post-title,
+.sh-blog-post-meta,
+.sh-blog-post-meta-item,
+.sh-blog-post-content,
+.sh-blog-post-content p,
+.sh-blog-post-content h2,
+.sh-blog-post-content h3,
+.sh-blog-post-content li,
+.sh-blog-post-content a,
+.sh-blog-post-content code {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.sh-blog-post-cover img,
+.sh-blog-post-content img,
+.sh-blog-post-content video,
+.sh-blog-post-content iframe,
+.sh-blog-post-content svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.sh-blog-post-content pre {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.sh-blog-post-content pre code {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+@media (max-width: 768px) {
+  .sh-blog-post-main {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: hidden;
+  }
+
+  .sh-blog-post-article {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .sh-blog-post-meta {
+    width: 100%;
+  }
+
+  .sh-blog-post-meta-item {
+    max-width: 100%;
+  }
+
+  .sh-blog-post-content {
+    width: 100%;
+  }
+
+  .sh-blog-post-content blockquote {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .sh-blog-post-content ul,
+  .sh-blog-post-content ol {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .sh-blog-post-content pre {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sh-blog-post-main {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .sh-blog-post-article {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .sh-blog-post-title {
+    letter-spacing: -1px;
+  }
+}

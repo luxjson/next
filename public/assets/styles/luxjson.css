@@ -1582,3 +1582,176 @@ html {
             padding-right: 40px;
           }
         }
+
+/* =========================================================
+   RESPONSIVE OVERFLOW FIXES
+   Keeps the original visual design while preventing any
+   element from expanding the mobile document width.
+   ========================================================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+body {
+  position: relative;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+.sh-header,
+.sh-nav-pill,
+.sh-hero,
+.sh-work,
+.sh-services,
+.sh-footer,
+.sh-footer-main,
+.sh-projects-grid,
+.sh-project-card,
+.sh-project-card-inner,
+.sh-project-card-content,
+.sh-project-card-header,
+.sh-service-card,
+.sh-description-text,
+.sh-project-modal,
+.sh-project-modal-body,
+.sh-project-modal-details,
+.sh-project-modal-header-info,
+.sh-project-modal-footer,
+.sh-project-modal-topics,
+.sh-tags,
+.sh-chat-modal,
+.sh-info-drawer-simple {
+  min-width: 0;
+}
+
+.sh-project-card-title,
+.sh-project-card-desc,
+.sh-service-title,
+.sh-service-desc,
+.sh-footer-title,
+.sh-footer-sub,
+.sh-modal-header h2,
+.sh-input-group input,
+.sh-input-group textarea,
+.sh-blog-post-title,
+.sh-blog-post-content {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.sh-chat-modal,
+.sh-info-drawer-simple {
+  box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .sh-chat-modal {
+    width: calc(100% - 80px);
+  }
+
+  .sh-info-drawer-simple {
+    width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 768px) {
+  .sh-header {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .sh-nav-pill {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sh-hero,
+  .sh-work,
+  .sh-services {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .sh-giant-title,
+  .sh-giant-title-1 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .sh-projects-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sh-project-card,
+  .sh-project-card-inner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sh-service-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sh-tags {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* The desktop drawer used width:100% plus margin:40px.
+     On mobile it is explicitly margin-free and viewport-bound. */
+  .sh-chat-modal {
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .sh-api-float-btn {
+    max-width: calc(100vw - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .sh-nav-pill {
+    padding-left: 16px;
+    padding-right: 8px;
+  }
+
+  .sh-nav-links {
+    min-width: 0;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+  }
+
+  .sh-logo-nav {
+    min-width: 0;
+    flex: 0 1 auto;
+  }
+
+  .sh-chat-btn {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .sh-footer-socials {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
