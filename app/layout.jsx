@@ -1,6 +1,7 @@
 import Script from 'next/script';
 import AuthProvider from '../context/AuthContext';
 import LegacyHashRedirect from '../components/LegacyHashRedirect';
+import ConsoleBanner from './ConsoleBanner';
 
 export const metadata = {
   title: 'LUXJSON',
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           <LegacyHashRedirect />
           {children}
+          <ConsoleBanner />
         </AuthProvider>
         <Script src="https://kit.fontawesome.com/2a6c7e9c66.js" crossOrigin="anonymous" strategy="afterInteractive" />
       </body>

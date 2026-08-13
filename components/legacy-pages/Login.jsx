@@ -5,7 +5,7 @@ import useExternalStyle from '../../hooks/useExternalStyle';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { useAuth } from '../../context/AuthContext';
-const svgLogo = '/assets/images/logo.jpg';
+const svgLogo = '/assets/images/logo.svg';
 
 export default function Login() {
   useExternalStyle('admin.css');

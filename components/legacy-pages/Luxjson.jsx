@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 const brFlag = '/assets/images/br.svg';
 const ukFlag = '/assets/images/uk.svg';
 import Link from 'next/link';
-const svgLogo = '/assets/images/logo.jpg';
+const svgLogo = '/assets/images/logo.svg';
 export default function Luxjson() {
   const [projects, setProjects] = useState([]);
   const [user, setUser] = useState(null);
