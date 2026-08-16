@@ -800,7 +800,7 @@ useEffect(() => {
     </motion.div>
   )}
   <motion.a key="api-float-btn"
-        href="https://luxjson.vercel.app/" //href="https://api.luxjson-is-a.dev"
+        href="https://api.luxjson.is-a.dev/" //href="https://api.luxjson-is-a.dev"
         rel="noopener noreferrer"
         className="sh-api-float-btn"
         initial={{ scale: 0.9, opacity: 0 }}
